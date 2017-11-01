@@ -4,7 +4,7 @@ morningmeeting v2.0 version upgrade transform
 
 ## The Stack:
 React16 + Redux + Webpack3 + ESLint + Sass + Router4 + Hot Loader + Es6/7  
-=========================================================================  
+-------------------------------------------------------------------------  
 ## 关于  
 当前项目模版中使用到的技术：  
 
