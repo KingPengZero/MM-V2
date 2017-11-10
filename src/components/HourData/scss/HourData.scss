@@ -1,0 +1,103 @@
+.Data{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9;
+  .bg{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0, 0.4)
+  }
+  .outer{
+    width: 100%;
+    //height: 320px;
+    position: absolute;
+    top: 50%;
+    margin-top: -160px;
+    left: 0px;
+    padding: 0px 25px;
+    .contant{
+      background-color: #f4f5f6;
+      border-radius: 6px;
+      position: relative;
+      height: 320px;
+      margin-right: 50px;
+      .title{
+        display: -webkit-flex;
+        align-items: center;
+        height: 54px;
+        font-size: 20px;
+        color: #0a0a0a;
+        padding: 0px 27px;
+        .tleft{
+          flex: 1;
+          display: -webkit-flex;
+          justify-content: center;
+        }
+      }
+      .number{
+        padding: 0px 27px;
+        background-color: #fff;
+        border-radius: 6px;
+        height: 188px;
+        box-sizing: content-box;
+        display: -webkit-flex;
+        align-items: center;
+        .nleft{
+          flex: 1;
+          .imgup{
+            display: -webkit-flex;
+            justify-content: center;
+            padding: 10px 0px;
+            img, image{
+              width: 21px;
+              height: 11px;
+            }
+          }
+          .numbercent{
+            font-size: 21px;
+            color: #0a0a0a;
+            height: 70px;
+            display: -webkit-flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      .button{
+        position: absolute;
+        height: 60px;
+        bottom: 0px;
+        left: 0px;
+        display: -webkit-flex;
+        align-items: center;
+        width: 100%;
+        font-size: 21px;
+        button{
+          display: inline-block;
+          flex: 1;
+          border: none;
+          background-color: #fff;
+          color: #A0A0A0;
+          line-height: 60px;
+          text-align: center;
+        }
+        .left{
+          background-color: #fff;
+          color: #A0A0A0;
+          border-bottom-left-radius: 6px;
+          line-height: 60px;
+          text-align: center;
+        }
+        .right{
+          background-color: #13A7FF;
+          color: #fff;
+          border-bottom-right-radius: 6px;
+        }
+      }
+    }
+  }
+}

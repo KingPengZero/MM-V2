@@ -1,0 +1,162 @@
+@import "./variables";
+/************图片中间对齐************/
+.gImageCenter {
+  background: {
+    size: contain;
+    position: center;
+    repeat: no-repeat;
+  }
+}
+
+/*--------------让一个div 垂直居中-----------------*/
+.gWebkitBoxCenter {
+  /* Safari、Opera 以及 Chrome */
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+
+  /* Firefox */
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+
+  /* W3C */
+  display: flexbox;
+  box-pack: center;
+  box-align: center;
+}
+@mixin g-Image-Center($size:contain) {
+  background: {
+    position: center;
+    repeat: no-repeat;
+    size: $size;
+  }
+}
+@mixin g-Image-Center-Url($size:contain,$url:'') {
+   @include g-Image-Center($size);
+  background: {
+    image: url($url);
+  }
+}
+
+.gMain {
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+
+/*-------------------------内容不换行，多出来的就 ... 省略了-------------------------------*/
+.gContentEllipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*-------------------------------------------------------------*/
+.gDisplayFlex {
+  display: -webkit-inline-flex;
+  display: -webkit-flex;
+  display: inline-flex;
+  display: flex;
+  display: -ms-flex;
+  display: -moz-box-flex;
+}
+
+/*-------------------------------线-----------------------------*/
+.gLine {
+  width: 100%;
+  background: #dcdcdc;
+}
+@mixin g-line($height:1px,$color:#dcdcdc) {
+  width: 100%;
+  height: $height;
+  background: $color;
+}
+
+.gLineFine {
+  height: 1px;
+  @extend .gLine;
+}
+
+.gLineWide {
+  height: 10px;
+  @extend .gLine;
+}
+
+.gFixed {
+
+  position: fixed;
+
+  &.fixedBottom {
+    bottom: 0;
+    width: 100%;
+  }
+
+  &.fixedTop {
+    top: 0;
+    width: 100%;
+  }
+}
+
+.gFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.gFooterInfo {
+  position: relative;
+  padding-bottom: 70px;
+  // border-bottom: 70px solid #f4f1f1; 用这个的话，页面底部如果固定的button，会有一种上下跳的感觉，因此不用这个。
+}
+
+/*-------------------------------线-----------------------------*/
+
+/*----------------三行后，多出来的加上...----------------*/
+/*.aaaaaaaaaaaaaaaaaaaaa {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}*/
+
+/*------颜色-----*/
+$line-color: #ececec;
+$oranger-color: #FF8000;
+$blue-color: #33CCFF;
+$dark-gray-color: #545454;
+$light-gray-color: #cdcdcd;
+$white-color: #FFFFFF;
+$body-background-color: #f4f1f1;
+$border-color: #ecedf0;
+$title-type-color: #fd9292;
+$main-title-color: #4d4d4d;
+$user-info-title: #9a9a9a;
+$user-info-value: #0a0a0a;
+$result-button-bgcolor: #FF6666;
+$exper-color: #ffcc00;
+$resour-border: #dddddd;
+$exper-select-color: #12a2d7;
+$exper-size-color: #787878;
+$points-color: #ff6600;
+$type-name-color: #000000;
+$type-content-color: #656565;
+$devide-line-color: #E6E6E6;
+
+/*------G信设计规范颜色-----*/
+$g-import-blue: #19B9E8;
+$g-app-background-color: #f4f5f6;
+$g-content-background-color: #FFFFFF;
+$g-split-line: #E6E6E6;
+$g-import-title: #222222;
+$g-minor-title: #656565;
+
+
+
+/*------G信设计规范字体-----*/
+$g-h1-font-size: 16px;
+$g-h2-font-size: 15px;
+$g-h3-font-size: 12px;
+

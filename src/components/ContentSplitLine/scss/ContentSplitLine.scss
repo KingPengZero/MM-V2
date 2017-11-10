@@ -1,0 +1,25 @@
+.contentSplitLineCss {
+  display: flex;
+  margin: .25rem 0;
+  font-size: .4rem;
+
+  .splace {
+    flex: 1;
+  }
+
+  .desc {
+    flex: 2;
+    display: flex;
+    align-items: center;
+
+    .line {
+      flex: 1;
+      border-bottom: 1px solid #a0a0a0;
+    }
+
+    .name {
+      margin: 0 .1rem;
+      color: #a0a0a0;
+    }
+  }
+}

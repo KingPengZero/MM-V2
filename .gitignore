@@ -1,0 +1,10 @@
+.history/
+dist/
+node_modules/
+src/containers/AddWorkContent
+src/containers/ExecutivePeople
+src/containers/MMCalendar
+src/containers/MMCalendarList
+src/containers/MMList
+src/containers/MMSetting
+src/containers/WorkContentDetail

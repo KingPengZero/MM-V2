@@ -1,0 +1,393 @@
+.iconCss {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  padding: 5px;
+  // width: 100%;
+  height: 100%;
+
+  &.hidePadding {
+    padding: 0;
+  }
+
+  div {
+    background: {
+      position: center;
+      repeat: no-repeat;
+      size: contain;
+    }
+    width: 20px;
+    height: 20px;
+  }
+
+  // 默认
+  &.iconDefault {
+    div {
+      width: 30px;
+      height: 30px;
+      border-radius: 20px;
+      background-size: cover;
+    }
+  }
+
+  // 删除
+  &.icondelete {
+    div {
+      background-image: url('../img/icon-delete@3x.png');
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  // 搜索
+  &.iconSearch {
+    div {
+      background-image: url('../img/icon-search@3x.png');
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  &.iconRight {
+    div {
+      background-image: url('../img/right.png');
+      width: 8px;
+      height: 13px;
+    }
+  }
+  // 取消点赞 灰色心
+  &.iconHeart {
+    div {
+      background-image: url('../img/icon-gray-heart@3x.png');
+      width: 17px;
+      height: 18px;
+    }
+
+    &.select {
+      // 点赞 红心
+      div {
+        background-image: url('../img/icon-red-heart@3x.png');
+      }
+    }
+  }
+
+  // 复选
+  &.iconCheckbox {
+    div {
+      width: .64rem;
+      height: .64rem;
+      background-image: url('../img/icon-checkbox-unselect.png');
+    }
+
+    &.select {
+      div {
+        background-image: url('../img/icon-checkbox-select.png');
+      }
+    }
+  }
+
+  &.iconRadio {
+    div {
+      width: .64rem;
+      height: .64rem;
+    }
+
+    &.select {
+      div {
+        background-image: url('../img/icon-radio.png');
+      }
+    }
+  }
+
+  // 多选图标 对勾
+  &.iconHook {
+    div {
+      // 未选中 空心
+      // background-image: url('../img/icon-radio-white@3x.png');
+      width: 17px;
+      height: 17px;
+    }
+
+    // &.select {
+    // 选中 对勾
+    // div {
+    // background-image: url('../img/icon-hook@3x.png');
+    // }
+    // }
+  }
+
+  // 人像
+  &.iconPeople {
+    div {
+      width: 10px;
+      height: 11px;
+      background-image: url('../img/icon-people@3x.png');
+    }
+  }
+
+  // 时钟
+  &.iconTime {
+    div {
+      width: 12px;
+      height: 14px;
+      background-image: url('../img/icon-time@3x.png');
+    }
+  }
+
+  // 向上
+  &.iconUpward {
+    div {
+      width: 13px;
+      height: 7px;
+      background-image: url('../img/icon-upward@3x.png');
+    }
+  }
+
+  // 向下
+  &.iconDown {
+    div {
+      width: 13px;
+      height: 7px;
+      background-image: url('../img/icon-down@3x.png');
+    }
+
+    &.select {
+      background-image: url('../img/icon-upward@3x.png');
+    }
+  }
+
+  // 对
+  &.iconAllRight {
+    div {
+      width: 37px;
+      height: 26px;
+      background-image: url('../img/icon-all-right@3x.png');
+    }
+  }
+
+  // 错
+  &.iconError {
+    div {
+      width: 31px;
+      height: 31px;
+      background-image: url('../img/icon-error@3x.png');
+    }
+  }
+
+  // 组合
+  &.iconAssemblage {
+    div {
+      width: 26px;
+      height: 20px;
+      background-image: url('../img/icon-assemblage@3x.png');
+    }
+  }
+
+  // 组合高亮
+  &.iconHeighLight {
+    div {
+      width: 26px;
+      height: 20px;
+      background-image: url('../img/icon-heigh-light@3x.png');
+    }
+  }
+
+  // 放大镜
+  &.iconMagnifyingGlass {
+    div {
+      width: 14px;
+      height: 14px;
+      background-image: url('../img/icon-magnifying-glass@3x.png');
+    }
+  }
+
+  // 下一步
+  &.iconNextStep {
+    div {
+      width: 8px;
+      height: 13px;
+      background-image: url('../img/icon-next-step.png');
+    }
+  }
+
+  // 执行
+  &.iconPerform {
+    div {
+      width: 20px;
+      height: 20px;
+      background-image: url('../img/icon-perform@3x.png');
+    }
+  }
+
+  // 接受者
+  &.iconRecipient {
+    div {
+      width: 15px;
+      height: 15px;
+      background-image: url('../img/icon-recipient@3x.png');
+    }
+  }
+
+  // 发送者
+  &.iconSender {
+    div {
+      width: 15px;
+      height: 15px;
+      background-image: url('../img/icon-sender@3x.png');
+    }
+  }
+
+  // 更多
+  &.iconMore {
+    div {
+      width: .5333rem;
+      height: .32rem;
+      background-image: url('../img/icon-more.png');
+    }
+  }
+
+  // 默认头像
+  &.headIcon {
+    div {
+      width: 39px;
+      height: 39px;
+      background-image: url('../img/user_p.png');
+    }
+  }
+
+  // 默认头像 35
+  &.headIcon35 {
+    div {
+      width: 35px;
+      height: 35px;
+      background-image: url('../img/user_p.png');
+    }
+  }
+  // 默认头像 小尺寸
+  &.headIconSmall {
+    div {
+      width: 30px;
+      height: 30px;
+      background-image: url('../img/user_p.png');
+    }
+  }
+
+  // 
+  &.iconHeadDefault {
+    div {
+      width: 1.18rem;
+      height: 1.18rem;
+      background-image: url('../img/user_p.png');
+    }
+  }
+
+  &.iconHeadSmall {
+    div {
+      width: 1.0rem;
+      height: 1.0rem;
+      background-image: url('../img/user_p.png');
+    }
+  }
+
+  // 蓝色闹钟
+  &.iconBlueTime {
+    div {
+      width: 12px;
+      height: 14px;
+      background-image: url('../img/icon-blue-time@3x.png');
+    }
+  }
+
+  // 分配
+  &.iconAssign {
+    div {
+      width: 12px;
+      height: 14px;
+      background-image: url('../img/icon-assign@3x.png');
+    }
+  }
+
+  // 标签
+  &.iconTaskLabel {
+    div {
+      width: 12px;
+      height: 12px;
+      background-image: url('../img/icon-task-label@3x.png');
+    }
+  }
+
+  // 关联
+  &.iconRelation {
+    div {
+      width: 12px;
+      height: 12px;
+      background-image: url('../img/icon-relation@3x.png');
+    }
+  }
+
+  // 关联蓝
+  &.iconRelationBlue {
+    div {
+      width: 12px;
+      height: 12px;
+      background-image: url('../img/icon-relation-blue@3x.png');
+    }
+  }
+  // 断网
+  &.iconBrokenNetWork {
+    div {
+      background-image: url('../img/icon-broken-network@3x.png');
+      width: 180px;
+      height: 94px;
+    }
+  }
+
+  // 没资源
+  &.iconNoResources {
+    div {
+      background-image: url('../img/icon-no-resources@3x.png');
+      width: 182px;
+      height: 84px;
+    }
+  }
+
+  &.iconArrowLeft {
+    div {
+      background-image: url('../img/icon-goback.png');
+      width: .8rem;
+      height: .6rem;
+    }
+  }
+
+  &.iconSwitchClose {
+    div {
+      background-image: url('../img/icon-switch-close.png');
+      width: 1.32rem;
+      height: .88rem;
+    }
+  }
+
+  &.iconSwitchOpen {
+    div {
+      background-image: url('../img/icon-switch-open.png');
+      width: 1.32rem;
+      height: .88rem;
+    }
+  }
+
+  &.iconBgArrowLeft {
+    div {
+      background-image: url('../img/icon-bg-left.png');
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  &.iconBgArrowRight {
+    div {
+      background-image: url('../img/icon-bg-right.png');
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}

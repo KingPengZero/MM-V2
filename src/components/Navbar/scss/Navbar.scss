@@ -1,0 +1,60 @@
+.navbarCss {
+  width: 100.1vw;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(248, 248, 248, 1);
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  font-size: .4rem;
+
+  .left {
+    // padding: 5px;
+    width: 1rem;
+
+    > div {
+      height: 25px;
+      width: 30px;
+      // background-image: url('../img/icon-arrow-left-white.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .center {
+    text-align: center;
+    flex: 1;
+    font-size: .5rem;
+    color: #222;
+  }
+
+  .right {
+    width: 1rem;
+    padding: 5px;
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+
+    .btn {
+      padding: .1rem;
+      text-align: center;
+      border-radius: .1rem;
+    }
+
+    .iconImage {
+      > div {
+        background: {
+          position: center;
+          repeat: no-repeat;
+          size: contain;
+        }
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

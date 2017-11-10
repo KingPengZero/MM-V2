@@ -1,0 +1,21 @@
+.defaultCss {
+  font-size: .42rem;
+
+  .demo {
+    display: flex;
+    flex-flow: wrap;
+
+    > div {
+      padding: 5px 10px;
+      border: 1px solid #a0a0a0;
+      border-radius: .1rem;
+      margin-left: .1rem;
+      margin-top: .1rem;
+    }
+  }
+
+  .componentsDemo {
+    display: flex;
+    flex-flow: wrap;
+  }
+}

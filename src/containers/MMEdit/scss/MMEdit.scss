@@ -1,0 +1,53 @@
+.mmEditCss {
+  padding: 0;
+  font-size: .36rem;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  .yestadayInfo {
+    -webkit-overflow-scrolling: touch;
+    height: 58vh;
+    overflow: auto;
+    background-color: #fff;
+    padding: .4rem;
+    .itemCss {
+      font-size: .361rem;
+      color: #000;
+      word-break: break-all;
+      text-align: left;
+      line-height: .56rem;
+    }
+  }
+
+  .content {
+    position: relative;
+    display: flex;
+
+    > textarea {
+      flex: 1;
+      height: 20vh;
+      resize: none;
+      border: none;
+      padding: .1rem .2rem;
+      line-height: 1.68;
+      font-size: .34rem;
+    }
+  }
+
+  .bottomBtn {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+    .btn {
+      font-size: 15px;
+      padding: .2rem .3rem;
+      text-align: center;
+      margin: .3rem 2.8rem;
+      border-radius: 2rem;
+      background: #25a9ff;
+      color: #fff;
+    }
+  }
+}

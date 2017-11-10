@@ -1,0 +1,19 @@
+.btns {
+  display: flex;
+
+  .btn,
+  button {
+    padding: 5px 15px;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .btn {
+    border: 1px solid #f0c0f0;
+    border-radius: 5px;
+  }
+}
+
+.navbar {
+  margin-top: 40px;
+}
