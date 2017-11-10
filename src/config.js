@@ -1,6 +1,5 @@
 const env = {
   development: {
-    // serverApi: 'http://172.20.56.28:11504/meeting',
     serverApi: 'http://172.20.95.41:11504/meeting',
     isProduction: false
   },
